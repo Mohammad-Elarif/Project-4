@@ -1,0 +1,63 @@
+<!DOCTYPE html> <!-- a way of telling the browser what version of HTML the web page is using, in this case, html5 -->
+<html lang="en"> <!-- lang="en" tells browsers and search engines that the entire web page is written in English.
+The lang attribute is a simple but important attribute
+that can help to improve the accessibility, SEO, and translation of your web pages -->
+    <head>
+        <meta charset="UTF-8">
+        <title>title!</title>
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- for bootstrap -->
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
+        <!-- alternatively we can download the bootstrap files and link them -->
+        <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    </head>
+    <body>
+    <!-- Header -->
+    <header class="bg-light py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Logo -->
+            <a href="index.html" class="logo">Online Shopping</a>
+    
+            <!-- Logout Button (hidden by default, visible when logged in) -->
+            <button id="logout-btn" class="btn btn-danger" style="display: none;">Logout</button>
+        </div>
+    </header>
+    
+<!---------------------------------------------------------------------------------------------------------------------------->
+    <!-- Main content -->
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h2 class="text-center mb-4">Create Account</h2>
+                <form id="registerForm">
+                    <div class="mb-3">
+                        <label for="first-name" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="last-name" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="last-name" name="last-name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Register</button>
+                </form>
+                <div class="text-center mt-3">
+                    <p>Already have an account? <a href="login.html">Login here</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+        
+        <script src="js/register.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
